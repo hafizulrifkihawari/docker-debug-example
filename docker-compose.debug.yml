@@ -6,7 +6,7 @@ services:
     build:
       context: .
       dockerfile: ./Dockerfile
-    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:8001 ./manage.py runserver 0.0.0.0:8000"]
+    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:8001 ./manage.py runserver 0.0.0.0:8003"]
     ports:
-      - 8000:8000
+      - 8003:8003
       - 8001:8001

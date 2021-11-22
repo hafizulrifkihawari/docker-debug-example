@@ -21,11 +21,19 @@
 			"python": {
 				"args": [
 					"runserver",
-					"0.0.0.0:8000",
+					"0.0.0.0:8003",
 				],
 				"file": "manage.py",
-				"debugPort": 8000
+				"debugPort": 8003
 			},
+			"dockerRun": {
+				"ports": [
+					{
+						"containerPort": 8003,
+						"hostPort": 8003
+					} 
+				],
+			}
 		}
 	]
 }
