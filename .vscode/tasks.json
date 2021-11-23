@@ -27,6 +27,12 @@
 				"debugPort": 8003
 			},
 			"dockerRun": {
+				"volumes": [
+					{
+						"localPath": "${workspaceFolder}/app",
+						"containerPath": "/app"
+					}
+				],
 				"ports": [
 					{
 						"containerPort": 8003,
